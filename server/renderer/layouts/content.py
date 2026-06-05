@@ -1,4 +1,4 @@
-"""Content slide — structured with title bar, dynamic title height."""
+"""Content slide — structured with title bar, natural spacing."""
 
 from __future__ import annotations
 
@@ -19,5 +19,4 @@ def render_content(slide, content: SlideContent, theme: Theme, page_num: int, to
     add_page_number(slide, theme, page_num, total)
 
     if content.bullets:
-        content_y = title_bottom + 0.15
-        add_bullets(slide, theme, content.bullets, y=content_y)
+        add_bullets(slide, theme, content.bullets, y=title_bottom + 0.25)

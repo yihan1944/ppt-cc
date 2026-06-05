@@ -25,7 +25,7 @@ def render_two_column(slide, content: SlideContent, theme: Theme, page_num: int,
     col_width = (layout.content_width - 0.6) / 2
     left_x = layout.margin_left
     right_x = layout.margin_left + col_width + 0.6
-    content_y = title_bottom + 0.2
+    content_y = title_bottom + 0.25
 
     r_col, g_col, b_col = theme.hex_to_rgb(theme.colors.secondary)
 
