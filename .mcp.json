@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ppt-cc": {
+      "command": "uv",
+      "args": ["--directory", "${CLAUDE_PROJECT_DIR}", "run", "python", "-m", "server.main"],
+      "env": {},
+      "alwaysLoad": true
+    }
+  }
+}
