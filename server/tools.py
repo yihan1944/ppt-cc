@@ -72,7 +72,7 @@ async def create_ppt(deck_plan_json: str, output_path: str = "") -> str:
 
     Args:
         deck_plan_json: JSON string of the deck plan (DeckPlan schema).
-        output_path: Output file path. If empty, auto-generates in ~/ppt-cc-output/.
+        output_path: Output file path. If empty, auto-generates in ./output/.
     """
     try:
         deck = parse_deck_plan_json(deck_plan_json)

@@ -21,6 +21,6 @@ Thumbs.db
 .idea/
 
 # Output
-ppt-cc-output/
+output/
 *.pptx
 !templates/*.pptx

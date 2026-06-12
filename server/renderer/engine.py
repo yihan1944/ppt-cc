@@ -97,7 +97,8 @@ def render_deck(deck: DeckPlan, output_path: str = "") -> str:
     # Determine output path
     if not output_path:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_dir = os.path.join(os.path.expanduser("~"), "ppt-cc-output")
+        project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        output_dir = os.path.join(project_root, "output")
         os.makedirs(output_dir, exist_ok=True)
         output_path = os.path.join(output_dir, f"presentation_{timestamp}.pptx")
 

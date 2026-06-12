@@ -115,6 +115,7 @@ ppt-cc/
 │       ├── themes/                # Visual themes
 │       └── layouts/               # Slide type renderers
 ├── templates/                     # Sample templates
+├── output/                        # Generated PPTX output (git-ignored)
 └── pyproject.toml
 ```
 
